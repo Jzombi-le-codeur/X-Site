@@ -1,0 +1,30 @@
+HTML
+<!-- Navigation Secondaire -->
+<!-- Navigation Secondaire Wrapper (pour mise en page) -->
+<div class="secondary-nav-wrapper">
+    <!-- Navigation Secondaire en Elle-même -->
+    <nav class="secondary-nav">
+        
+    </nav>
+</div>
+
+
+CSS
+/* MISE EN PAGE NAVIGATION SECONDAIRE */
+
+/* Wrapper Navigation Secondaire */
+.secondary-nav-wrapper {
+    flex-basis: 20%; /* Définir Longueur Navigation Secondaire dans Page */
+    height: auto; /* Définir Hauteur en fonction d'hauteur Maximale */
+    max-height: 50rem; /* Définir Hauteur Maximale */
+    position: relative; /* Mettre en Position par Défaut*/
+}
+
+/* Navigation Secondaire */
+.secondary-nav {
+    position: fixed; /* Fixer la Navigation */
+    flex-basis: auto; /* Calquer Longueur Navigation sur Wrapper */
+    height: auto; /* Définir Hauteur en fonction des Items */
+    max-height: 50rem; /* Calquer Hauteur Maximale sur Wrapper */
+    border: black 5px solid; /* Dessiner bordure (TEMPORAIRE) */
+}

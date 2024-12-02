@@ -1,0 +1,226 @@
+/* BODY ET CONTENU */
+
+/* Body */
+body {
+    /* Enlever la Marge et le Padding */
+    margin: 0;
+    padding: 0;
+
+    /* S'étendre sur toute la page */
+    width: 100%;
+
+    /* Flexbox */
+    display: flex;
+}
+
+
+
+
+
+/* MISE EN PAGE ELEMENTS */
+
+/* MISE EN PAGE NAVIGATION */
+
+/* Navigation Wrapper */
+.nav-wrapper {
+    flex-basis: 20%; /* Définir Longueur Navigation dans Page */
+    height: auto; /* Définir Hauteur en fonction d'hauteur Maximale */
+    max-height: 50rem; /* Définir Hauteur Maximale */
+    position: relative; /* Mettre en Position par Défaut*/
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/* Navigation */
+.navigation {
+    position: fixed; /* Fixer la Navigation */
+    flex-basis: auto; /* Calquer Longueur Navigation sur Wrapper */
+    height: auto; /* Définir Hauteur en fonction des Items */
+    max-height: 50rem; /* Calquer Hauteur Maximale sur Wrapper */
+    margin-right: 5rem;
+}
+
+
+
+/* MISE EN PAGE TWEETS */
+
+/* TWEETS (CONTAINERS) */
+/* Tweets */
+.tweets {
+    flex-basis: 40%; /* Définir Longueur Tweets */
+    margin: 0px 5px 0px 5px; /* Définir Marge de l'Ensemble des Tweets */
+    margin-top: 0; /* Effacer la Marge d'hauteur */
+    border-bottom: #eff3f4 1px solid; /* Bordure Bas de l'Ensemble des Tweets */
+
+    display: flex; /* Flexbox pour mettre en page Tweets */
+    flex-direction: column; /* Mettre Tweets en Colonne */
+}
+
+/* Tweet */
+.tweet, .reponse {
+    /* Bordure pour tweet */
+    border: #eff3f4 1px solid;
+    border-bottom: 0px;
+    padding-right: 10px;
+}
+
+
+/* BORDURE */
+/* Border */
+.border {
+    flex-basis: 10%; /* Longueur Bordure pour Centrer */
+}
+
+/* NAVIGATION */
+
+/* Container Flex Navigation */
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+/* Items ("liens" de navigation) */
+.nav-item {
+    /* Flex pour le Contenu Intérieur*/
+    display: flex;
+    align-items: center; /* Centrage vertical */
+    gap: 8px; /* Espace entre SVG et texte */
+    padding: 8px;
+}
+
+/* Icônes d'Items de Navigation */
+.nav-item-icon {
+    width: 26.25px; /* Définir Longueur Icône */
+    height: 26.25px; /* Définir Hauteur Icône */
+    flex-shrink: 0; /* Empêcher Rognure Icône */
+}
+
+/* Texte d'Items de Navigation */
+.nav-item-text {
+    margin: 0; /* Supprimer Marge de Texte */
+    line-height: 1; /* Supprime l'écart vertical */
+}
+
+/* Logo en tant qu'Item */
+.nav-logo {
+    margin-bottom: 5px; /* Définir Marge pour LOGO*/
+}
+
+/* Logo (dessin) */
+.logo {
+    transform: scale(1.3) /* Aggrandir Logo */
+}
+
+.home-link {
+    text-decoration: none;
+    color: black;
+    width: 7rem;
+}
+
+.home-link:hover {
+    background-color: #e7e7e8;
+}
+
+.fil-selected {
+    background-color: #e7e7e8;
+}
+
+/* TWEETS */
+/* FILS */
+.fils {
+    /* Taille Fils */
+    height: 50px;
+
+    /* Bordure pour tweet */
+    border: #eff3f4 1px solid;
+    border-bottom: 0px;
+
+    /* Mise en Page fils */
+    display: flex;
+}
+
+/* Elements dans l'Ensemble des Fils */
+.fils-item {
+    flex-basis: 25%; /* Centrer les fils */
+}
+
+/* Fil */
+.fil {
+    /* Centrer les fils */
+    align-content: center;
+    text-align: center;
+}
+
+.fil:hover {
+    cursor: pointer;
+    background-color: #f7f7f7;
+}
+
+/* Bordure Fils */
+.border-fils {
+    flex-basis: 20%; /* Centrer les fils */
+} 
+
+.certif {
+    width: 22px;
+    height: 22px;
+}
+
+
+/* TWEETS EN EUX MÊMES */
+/* TWEETS (PdP) */
+/* Container Partie PdP */
+.tweet-profile {
+    display: flex; /* Mettre en Flex pour prendre toute hauteur tweet */
+    margin: 8px 0px 0px 8px; /* Marge pour espacer PdP et Tweet */
+}
+
+/* Container PdP en elle-même */
+.pdp-container {
+    flex-basis: 50px; /* Définir Taille PdP */
+    min-width: 50px; /* Définir Taille Minimum PdP */
+}
+
+/* PdP en elle-même */
+.pdp {
+    /* Définir Taille PdP */
+    width: 40px;
+    height: 40px;
+
+    /* Mettre PdP en "rond" */
+    border-radius: 50%;
+}
+
+/* TWEETS (partie texte) */
+/* Pseudo */
+.pseudo {
+    display: flex;
+    margin-top: 3px; /* Mettre Marge en Haut */
+    align-items: center;
+    gap: 5px;
+}
+
+/* Contenu Tweet */
+.tweet-content {
+    margin: 5px 0px 10px 0px; /* Marge du Tweet */
+}
+
+.lien-tweet {
+    text-decoration: none;
+    color: black;
+}
+
+.tweet:hover {
+    cursor: pointer;
+    background-color: #f7f7f7;
+}
+
+.rep {
+    color: #4baff3;
+    text-decoration: none;
+}
+
+.rep:hover {
+    text-decoration: underline;
+}
